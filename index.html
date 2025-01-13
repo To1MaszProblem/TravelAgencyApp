@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bióro podróży</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo"><img src="assets/logo.png"></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Strona główna</a></li>
+        <li><a href="#service">Usługi</a></li>
+        <li><a href="#destination">Miejsca docelowe</a></li>
+        <li><a href="#package">Pakiety</a></li>
+        <li><a href="#client">Klienci</a></li>
+      </ul>
+    </nav>
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <h1>PODRÓŻE<br /><span>NA CAŁE ŻYCIE.</span></h1>
+        <p>Przeżyj najlepsze chwile swojego życia</p>
+        <form action="/">
+          <div class="input__group">
+            <span><i class="ri-map-2-fill"></i></span>
+            <input type="text" id="destination-input" placeholder="Gdzie chcesz jechać?" autocomplete="off" />
+            <div class="suggestions" id="destination-suggestions"></div>
+          </div>
+          <div class="input__group">
+            <span><i class="ri-map-pin-2-fill"></i></span>
+            <input type="text" id="location-input" placeholder="Lokalizacja" autocomplete="off" />
+            <div class="suggestions" id="location-suggestions"></div>
+          </div>
+          <div class="input__group">
+            <span><i class="ri-list-ordered-2"></i></span>
+            <input type="text" id="type-input" placeholder="Rodzaj wycieczki" autocomplete="off" />
+            <div class="suggestions" id="type-suggestions"></div>
+          </div>
+          <div class="input__group">
+            <button class="btn">Szukaj</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <section class="section__container feature__container" id="service">
+      <div class="feature__card">
+        <img src="assets/feature-1.png" alt="feature" />
+        <div>
+          <h4>Najlepsze miejsca docelowe</h4>
+          <p>Odkryj najbardziej zapierające dech w piersiach miejsca na świecie.</p>
+        </div>
+      </div>
+      <div class="feature__card">
+        <img src="assets/feature-2.png" alt="feature" />
+        <div>
+          <h4>Gwarancja najlepszej ceny</h4>
+          <p>Skorzystaj z najlepszych cen na każdą wycieczkę, którą zarezerwujesz.</p>
+        </div>
+      </div>
+      <div class="feature__card">
+        <img src="assets/feature-3.png" alt="feature" />
+        <div>
+          <h4>Natychmiastowa rezerwacja</h4>
+          <p>Zarezerwuj swoje wymarzone wakacje jednym kliknięciem.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination" id="destination">
+      <div class="section__container destination__container">
+        <h2 class="section__header">Najlepsze miejsca docelowe</h2>
+        <p class="section__description">
+          Odkryj najbardziej pożądane kierunki podróży na świecie
+        </p>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/destination-1.jpg" alt="destination" />
+            <div class="destination__content">Bhutan</div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/destination-2.jpg" alt="destination" />
+            <div class="destination__content">Japonia</div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/destination-3.jpg" alt="destination" />
+            <div class="destination__content">Nepal</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="section__container discount__container">
+        <h2>
+          Skorzystaj z rabatu do 60%<br /><span>dołączając do nas przed latem</span>
+        </h2>
+        <div class="discount__btn">
+          <button class="btn">Dołącz do nas</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container package__container" id="package">
+      <h2 class="section__header">Polecane pakiety</h2>
+      <p class="section__description">
+        Pomożemy Ci znaleźć podróż idealnie dopasowaną do Twoich potrzeb!
+      </p>
+      <div class="package__grid">
+        <div class="package__card">
+          <img src="assets/package-1.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Wycieczka po Tajlandii</h4>
+            <p>
+              Odkryj żywą kulturę i przepiękne krajobrazy Tajlandii.
+            </p>
+            <div>
+              <button class="btn">Zarezerwuj teraz</button>
+              <h3>520zł</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="assets/package-2.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Wycieczka po Laosie</h4>
+            <p>
+              Zanurz się w bogatej kulturze i niesamowitych krajobrazach Laosu.
+            </p>
+            <div>
+              <button class="btn">Zarezerwuj teraz</button>
+              <h3>570zł</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="assets/package-3.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Wycieczka po Singapurze</h4>
+            <p>
+              Poznaj ekscytującą mieszankę kultury, kuchni i nowoczesnej architektury.
+            </p>
+            <div>
+              <button class="btn">Zarezerwuj teraz</button>
+              <h3>420zł</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Opinie klientów</h2>
+      <p class="section__description">
+        Mamy wielu zadowolonych klientów, którzy zarezerwowali u nas wakacje
+      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/clients/client-1.png" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                Łoł zaj***ste oferty
+                lecemy na kurwy!
+              </p>
+              <h4>Bartosz Wąsiński</h4>
+              <h5>Very Autism Man</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/clients/client-2.png" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                Nie ma wycieczki do warszawy i dobrze "NIENAWIDZE WARSZAWY"!
+              </p>
+              <h4>Krystian Gierakowski</h4>
+              <h5>Piosenkarz (nie raper)</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/clients/client-3.png" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                Poleca se na wczasy bo już mnie nerwy bierą
+              </p>
+              <h4>Batman</h4>
+              <h5>Superbohater</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/clients/client-4.png" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                Bo to medyczna marihuana dzisiaj legalna, choć kiedyś zakazana
+              </p>
+              <h4>Bartosz Paszkowski</h4>
+              <h5>Betoniarka</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/clients/client-5.png" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                Od dziś sie nie sprzedaje tylko na komenciee
+              </p>
+              <h4>Bartłomiej Walczak</h4>
+              <h5>Rudy</h5>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo"><img src="assets/logo.png"></a>
+          </div>
+          <p>
+            Odkryj najlepsze miejsca na świecie, ciesz się bezkonkurencyjnymi cenami i
+            Zarezerwuj swój idealny wypoczynek natychmiast.
+          </p>
+          <h4>CONNECT WITH US</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-google-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>SZYBKIE LINKI</h4>
+          <ul class="footer__links">
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Blogi</a></li>
+            <li><a href="#">Referencje</a></li>
+            <li><a href="#">Skontaktuj się z nami</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>KIERUNKI</h4>
+          <ul class="footer__links">
+            <li><a href="#">China</a></li>
+            <li><a href="#">Venezuela</a></li>
+            <li><a href="#">Brazil</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">London</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>NASZA DZIAŁALNOŚĆ</h4>
+          <ul class="footer__links">
+            <li><a href="#">Trekking</a></li>
+            <li><a href="#">Wspinaczka na szczyt</a></li>
+            <li><a href="#">Jazda na rowerze</a></li>
+            <li><a href="#">Spływ kajakowy</a></li>
+            <li><a href="#">Wycieczka kulturalna</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Tomasz Musioł
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
